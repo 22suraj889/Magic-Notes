@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="magic_notes.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3 p-3">
+        <h2 class="text-center">Magic Notes</h2>
+        <div class="card p-5 m-5">
+            <h5>Add title</h5>
+            <div class="input-group">
+                <input type="text" class="form-control titles" aria-label="Username" id="title_area" aria-describedby="basic-addon1">
+            </div>
+            <h5 class="card-title mt-4">Add a note</h5>
+            <div class="input-group">
+                <textarea class="form-control notes" aria-label="With textarea" id="text_area"></textarea>
+            </div>
+            <div class="card-body">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button class="btn btn-primary" type="button" id="addBtn">Add note</button>
+                    <button id="delete_all_btn" type="button" class="btn btn-danger">Delete all notes</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center" id="note_heading"></h2>
+        <div class="container-fluid row justify-content-center" id="noteCard">
+
+        </div>
+
+    </div>
+</body>
+<script src="bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script>
+<script src="magic_notes.js"></script>
+
+</html>
